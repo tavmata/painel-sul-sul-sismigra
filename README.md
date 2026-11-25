@@ -6,6 +6,9 @@ cuja origem está no Sul Global. Inclui uma página dedicada à comparação ent
 
 Tudo é reprodutível: um script em Python harmoniza os microdados e outro gera o modelo do Power BI.
 
+**[▶ Abrir a versão web interativa](https://tavmata.github.io/painel-sul-sul-sismigra/)**: funciona no navegador e
+no celular, sem instalar nada, com os mesmos filtros (anos, critério de Sul Global, região e país) e as mesmas páginas.
+
 ![Visão geral do painel](docs/img/01-visao-geral.png)
 
 ## Alguns números (2010 – abr. 2026)
@@ -53,6 +56,11 @@ Requisitos: [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Windows,
 Para atualizar com dados novos, coloque os CSV em `dados/`, rode `preparar_dados.py` de novo e clique em
 **Atualizar** no Power BI. Para mudar medidas, visuais ou layout, edite e rode `gerar_pbit.py`, que regera o `.pbit`.
 
+**Versão web.** A página em [`docs/`](docs/) (HTML, CSS e JavaScript, sem dependências externas) é publicada pelo
+GitHub Pages. Depois de `preparar_dados.py`, rode `python gerar_web.py` para atualizar `docs/dados.json` (contagens
+agregadas por ano × país × atributo, cerca de 2 MB) e faça o commit. Para testar localmente:
+`python -m http.server --directory docs` e abra http://localhost:8000.
+
 ## Metodologia
 
 - **País de referência**: nacionalidade. O arquivo 2010–2017 não traz nacionalidade para o ano de 2017
@@ -83,6 +91,8 @@ As classificações são arquivos CSV editáveis: discorda de uma escolha? Edite
 | `Painel_Migracao_Sul-Sul_SISMIGRA.pbit` | Modelo do Power BI (sem dados): 8 tabelas, 30 medidas DAX, 7 páginas |
 | `preparar_dados.py` | Harmoniza os microdados e grava o fato agregado e as dimensões em `tabelas/` |
 | `gerar_pbit.py` | Gera o `.pbit` a partir de código (modelo, medidas, visuais e tema) |
+| `gerar_web.py` | Gera `docs/dados.json`, a base agregada da versão web |
+| `docs/` | Versão web (`index.html`, `app.js`, `estilo.css`, `dados.json`) e imagens do README |
 | `referencias/` | Classificações de países, grafias e profissões (editáveis) |
 | `dados/` | Onde ficam os CSV do SISMIGRA (não versionados) |
 

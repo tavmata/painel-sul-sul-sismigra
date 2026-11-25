@@ -4,3 +4,4 @@ tabelas/
 # Painel salvo com dados
 *.pbix
 __pycache__/
+.claude/

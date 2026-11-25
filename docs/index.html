@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Migração Sul-Sul no Brasil – SISMIGRA</title>
+<meta name="description" content="Painel interativo sobre a migração Sul-Sul no Brasil a partir dos registros de imigrantes do SISMIGRA (2010 a abril de 2026).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='9' width='3' height='6' rx='1' fill='%232a78d6'/%3E%3Crect x='6' y='5' width='3' height='10' rx='1' fill='%232a78d6'/%3E%3Crect x='11' y='1' width='3' height='14' rx='1' fill='%23eb6834'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="estilo.css?v=1">
+</head>
+<body>
+<header class="topo">
+  <div class="topo-txt">
+    <h1>Migração Sul-Sul no Brasil</h1>
+    <p>Registros de imigrantes no SISMIGRA com origem no Sul Global · 2010 a abril de 2026</p>
+  </div>
+  <nav class="topo-links">
+    <a href="https://github.com/tavmata/painel-sul-sul-sismigra">Código e metodologia</a>
+    <a href="https://github.com/tavmata/painel-sul-sul-sismigra/raw/main/Painel_Migracao_Sul-Sul_SISMIGRA.pbit">Painel Power BI (.pbit)</a>
+    <button id="tema" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+  </nav>
+</header>
+
+<div class="filtros" role="search" aria-label="Filtros">
+  <div class="f-grupo">
+    <span class="f-rot">Anos de registro</span>
+    <div class="f-linha">
+      <label class="vis-oculto" for="de">De</label><select id="de"></select>
+      <span class="f-ate">a</span>
+      <label class="vis-oculto" for="ate">Até</label><select id="ate"></select>
+      <button type="button" class="f-preset" data-preset="tudo">Tudo</button>
+      <button type="button" class="f-preset" data-preset="2016">2016 em diante</button>
+    </div>
+  </div>
+  <div class="f-grupo" id="g-crit">
+    <label class="f-rot" for="crit">Critério de Sul Global</label>
+    <select id="crit">
+      <option value="onu">ONU/DESA – regiões menos desenvolvidas</option>
+      <option value="unctad">UNCTAD – economias em desenvolvimento</option>
+    </select>
+  </div>
+  <div class="f-grupo">
+    <label class="f-rot" for="regiao">Região de origem</label>
+    <select id="regiao"></select>
+  </div>
+  <div class="f-grupo">
+    <label class="f-rot" for="pais">País de origem</label>
+    <select id="pais"></select>
+  </div>
+  <button type="button" id="limpar" class="f-limpar">Limpar filtros</button>
+</div>
+
+<nav class="abas" role="tablist" aria-label="Páginas do painel">
+  <button role="tab" data-aba="visao">Visão geral</button>
+  <button role="tab" data-aba="origens">Origens</button>
+  <button role="tab" data-aba="perfil">Perfil</button>
+  <button role="tab" data-aba="amparo">Amparo legal</button>
+  <button role="tab" data-aba="destinos">Destinos no Brasil</button>
+  <button role="tab" data-aba="asia-africa">Ásia e África</button>
+  <button role="tab" data-aba="notas">Notas</button>
+</nav>
+
+<main id="conteudo" aria-live="polite">
+  <p class="carregando">Carregando dados…</p>
+</main>
+
+<template id="tpl-notas">
+  <article class="notas">
+    <h2>Notas metodológicas</h2>
+    <p><strong>Fonte e unidade de análise.</strong> Microdados do SISMIGRA (Sistema de Registro Nacional Migratório,
+      Polícia Federal), divulgados pelo OBMigra/MJSP, de 2010 a abril de 2026. Cada número é uma contagem de
+      <em>registros</em> de imigrantes por ano de registro: não é número de pessoas únicas nem fluxo de entrada.
+      2026 é parcial (janeiro a abril).</p>
+    <p><strong>País de referência.</strong> País de nacionalidade. O arquivo de 2017 não traz nacionalidade; para esse ano
+      usa-se o país de nascimento (nos demais anos, os dois coincidem em 97,6% dos registros). Região e sub-região
+      seguem a classificação M49 da ONU (o campo CONTINENTE do SISMIGRA é inconsistente e foi descartado).</p>
+    <p><strong>Sul Global – critério ONU/DESA (padrão).</strong> Regiões menos desenvolvidas: todos os países, exceto Europa,
+      América do Norte (EUA, Canadá, Bermudas, Groenlândia), Austrália, Nova Zelândia e Japão.
+      <strong>Critério UNCTAD:</strong> economias em desenvolvimento, excluindo também Israel, Coreia do Sul e Chipre.</p>
+    <p><strong>Página Ásia e África.</strong> Mostra todos os países dessas regiões, sem aplicar o critério de Sul Global,
+      para comparar a Ásia Oriental (China, Japão, Coreias, Taiwan) com o restante da Ásia e com a África.</p>
+    <p><strong>Solicitação de refúgio (DPRNM).</strong> O SISMIGRA rotula como “Não aplicável” os registros com amparo 290
+      (art. 2º do Decreto 9.277/2018), o documento provisório do solicitante de refúgio. Aqui eles aparecem como
+      “Solicitação de refúgio (DPRNM)” e entram no indicador de acolhida humanitária e refúgio, junto com acolhida
+      humanitária, acolhida a venezuelanos e refúgio/asilo.</p>
+    <p><strong>Profissões e grupos ocupacionais.</strong> 169 grafias de profissão foram padronizadas em 95 profissões e 14
+      grandes grupos, em classificação própria inspirada nos grandes grupos da CBO/ISCO. O indicador
+      “% dirigentes e profissionais” tem como base apenas os registros com ocupação declarada no mercado de trabalho
+      (exclui estudantes, menores, sem ocupação, aposentados, dependentes e não classificados).</p>
+    <p><strong>Filtros.</strong> Os filtros de anos, critério, região e país valem para todas as páginas. Use “Tabela” em cada
+      gráfico para ver os números exatos. O endereço da página guarda a aba e os filtros: copie-o para compartilhar
+      uma visão específica.</p>
+    <p><strong>Código aberto.</strong> Scripts, classificações e o painel Power BI estão em
+      <a href="https://github.com/tavmata/painel-sul-sul-sismigra">github.com/tavmata/painel-sul-sul-sismigra</a>
+      (código sob licença MIT; conteúdo sob CC BY 4.0). Ao usar, cite o painel e o SISMIGRA.</p>
+  </article>
+</template>
+
+<footer class="rodape">
+  <span>Fonte: SISMIGRA (Polícia Federal / MJSP – OBMigra). Contagens de registros, não de pessoas.</span>
+  <span id="gerado"></span>
+</footer>
+<div id="tip" class="tip" role="tooltip" hidden></div>
+<script src="app.js?v=1"></script>
+</body>
+</html>
