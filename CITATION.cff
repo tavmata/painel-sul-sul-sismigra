@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Se usar este painel ou suas classificações, cite-o como abaixo e cite também a fonte dos dados (SISMIGRA, Polícia Federal / MJSP)."
+title: "Migração Sul-Sul no Brasil – painel Power BI (SISMIGRA)"
+type: software
+authors:
+  - given-names: "Otávio"
+    family-names: "M."
+version: "1.0.0"
+date-released: "2026-11-25"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/tavmata/painel-sul-sul-sismigra"
+abstract: >-
+  Painel Power BI sobre a migração Sul-Sul no Brasil a partir dos microdados de registro de imigrantes
+  do SISMIGRA (Polícia Federal), 2010 a abril de 2026, com scripts reprodutíveis de harmonização
+  (países pela classificação M49 da ONU, profissões, amparos legais) e de geração do modelo do Power BI.
+  Inclui critérios alternativos de Sul Global (ONU/DESA e UNCTAD) e comparação entre Ásia e África.
+keywords:
+  - migração internacional
+  - migração Sul-Sul
+  - Sul Global
+  - SISMIGRA
+  - Brasil
+  - Power BI
+  - south-south migration
+  - Global South

@@ -1,0 +1,238 @@
+pais;iso3;sub_regiao
+Argélia;DZA;África Setentrional
+Egito;EGY;África Setentrional
+Líbia;LBY;África Setentrional
+Marrocos;MAR;África Setentrional
+Sudão;SDN;África Setentrional
+Tunísia;TUN;África Setentrional
+Saara Ocidental;ESH;África Setentrional
+Burundi;BDI;África Oriental
+Comores;COM;África Oriental
+Djibuti;DJI;África Oriental
+Eritreia;ERI;África Oriental
+Etiópia;ETH;África Oriental
+Quênia;KEN;África Oriental
+Madagascar;MDG;África Oriental
+Malawi;MWI;África Oriental
+Maurício;MUS;África Oriental
+Mayotte;MYT;África Oriental
+Moçambique;MOZ;África Oriental
+Reunião;REU;África Oriental
+Ruanda;RWA;África Oriental
+Seicheles;SYC;África Oriental
+Somália;SOM;África Oriental
+Sudão do Sul;SSD;África Oriental
+Uganda;UGA;África Oriental
+Tanzânia;TZA;África Oriental
+Zâmbia;ZMB;África Oriental
+Zimbábue;ZWE;África Oriental
+Território Britânico do Oceano Índico;IOT;África Oriental
+Angola;AGO;África Central
+Camarões;CMR;África Central
+República Centro-Africana;CAF;África Central
+Chade;TCD;África Central
+República do Congo;COG;África Central
+República Democrática do Congo;COD;África Central
+Congo (não especificado);;África Central
+Guiné Equatorial;GNQ;África Central
+Gabão;GAB;África Central
+São Tomé e Príncipe;STP;África Central
+Botsuana;BWA;África Austral
+Essuatíni;SWZ;África Austral
+Lesoto;LSO;África Austral
+Namíbia;NAM;África Austral
+África do Sul;ZAF;África Austral
+Benin;BEN;África Ocidental
+Burkina Faso;BFA;África Ocidental
+Cabo Verde;CPV;África Ocidental
+Costa do Marfim;CIV;África Ocidental
+Gâmbia;GMB;África Ocidental
+Gana;GHA;África Ocidental
+Guiné;GIN;África Ocidental
+Guiné-Bissau;GNB;África Ocidental
+Libéria;LBR;África Ocidental
+Mali;MLI;África Ocidental
+Mauritânia;MRT;África Ocidental
+Níger;NER;África Ocidental
+Nigéria;NGA;África Ocidental
+Santa Helena;SHN;África Ocidental
+Senegal;SEN;África Ocidental
+Serra Leoa;SLE;África Ocidental
+Togo;TGO;África Ocidental
+Anguila;AIA;Caribe
+Antígua e Barbuda;ATG;Caribe
+Aruba;ABW;Caribe
+Bahamas;BHS;Caribe
+Barbados;BRB;Caribe
+Ilhas Cayman;CYM;Caribe
+Cuba;CUB;Caribe
+Curaçao;CUW;Caribe
+Dominica;DMA;Caribe
+República Dominicana;DOM;Caribe
+Granada;GRD;Caribe
+Guadalupe;GLP;Caribe
+Haiti;HTI;Caribe
+Jamaica;JAM;Caribe
+Martinica;MTQ;Caribe
+Porto Rico;PRI;Caribe
+São Cristóvão e Névis;KNA;Caribe
+Santa Lúcia;LCA;Caribe
+São Vicente e Granadinas;VCT;Caribe
+Trinidad e Tobago;TTO;Caribe
+Ilhas Turks e Caicos;TCA;Caribe
+Ilhas Virgens Britânicas;VGB;Caribe
+Ilhas Virgens Americanas;VIR;Caribe
+Ilhas Virgens (não especificado);;Caribe
+Antilhas Holandesas (antiga);ANT;Caribe
+Estados Associados das Antilhas (antigo);;Caribe
+Belize;BLZ;América Central
+Costa Rica;CRI;América Central
+El Salvador;SLV;América Central
+Guatemala;GTM;América Central
+Honduras;HND;América Central
+México;MEX;América Central
+Nicarágua;NIC;América Central
+Panamá;PAN;América Central
+Argentina;ARG;América do Sul
+Bolívia;BOL;América do Sul
+Chile;CHL;América do Sul
+Colômbia;COL;América do Sul
+Equador;ECU;América do Sul
+Ilhas Malvinas (Falkland);FLK;América do Sul
+Guiana Francesa;GUF;América do Sul
+Guiana;GUY;América do Sul
+Paraguai;PRY;América do Sul
+Peru;PER;América do Sul
+Suriname;SUR;América do Sul
+Uruguai;URY;América do Sul
+Venezuela;VEN;América do Sul
+Bermudas;BMU;América do Norte
+Canadá;CAN;América do Norte
+Groenlândia;GRL;América do Norte
+Estados Unidos;USA;América do Norte
+Cazaquistão;KAZ;Ásia Central
+Quirguistão;KGZ;Ásia Central
+Tadjiquistão;TJK;Ásia Central
+Turcomenistão;TKM;Ásia Central
+Uzbequistão;UZB;Ásia Central
+China;CHN;Ásia Oriental
+Hong Kong;HKG;Ásia Oriental
+Macau;MAC;Ásia Oriental
+Coreia do Norte;PRK;Ásia Oriental
+Japão;JPN;Ásia Oriental
+Mongólia;MNG;Ásia Oriental
+Coreia do Sul;KOR;Ásia Oriental
+Taiwan;TWN;Ásia Oriental
+Brunei;BRN;Sudeste Asiático
+Camboja;KHM;Sudeste Asiático
+Indonésia;IDN;Sudeste Asiático
+Laos;LAO;Sudeste Asiático
+Malásia;MYS;Sudeste Asiático
+Mianmar;MMR;Sudeste Asiático
+Filipinas;PHL;Sudeste Asiático
+Singapura;SGP;Sudeste Asiático
+Tailândia;THA;Sudeste Asiático
+Timor-Leste;TLS;Sudeste Asiático
+Vietnã;VNM;Sudeste Asiático
+Afeganistão;AFG;Ásia Meridional
+Bangladesh;BGD;Ásia Meridional
+Butão;BTN;Ásia Meridional
+Índia;IND;Ásia Meridional
+Irã;IRN;Ásia Meridional
+Maldivas;MDV;Ásia Meridional
+Nepal;NPL;Ásia Meridional
+Paquistão;PAK;Ásia Meridional
+Sri Lanka;LKA;Ásia Meridional
+Armênia;ARM;Ásia Ocidental
+Azerbaijão;AZE;Ásia Ocidental
+Bahrein;BHR;Ásia Ocidental
+Chipre;CYP;Ásia Ocidental
+Geórgia;GEO;Ásia Ocidental
+Iraque;IRQ;Ásia Ocidental
+Israel;ISR;Ásia Ocidental
+Jordânia;JOR;Ásia Ocidental
+Kuwait;KWT;Ásia Ocidental
+Líbano;LBN;Ásia Ocidental
+Omã;OMN;Ásia Ocidental
+Catar;QAT;Ásia Ocidental
+Arábia Saudita;SAU;Ásia Ocidental
+Palestina;PSE;Ásia Ocidental
+Síria;SYR;Ásia Ocidental
+Turquia;TUR;Ásia Ocidental
+Emirados Árabes Unidos;ARE;Ásia Ocidental
+Iêmen;YEM;Ásia Ocidental
+Belarus;BLR;Europa Oriental
+Bulgária;BGR;Europa Oriental
+Tchéquia;CZE;Europa Oriental
+Hungria;HUN;Europa Oriental
+Polônia;POL;Europa Oriental
+Moldávia;MDA;Europa Oriental
+Romênia;ROU;Europa Oriental
+Rússia;RUS;Europa Oriental
+Eslováquia;SVK;Europa Oriental
+Ucrânia;UKR;Europa Oriental
+Tchecoslováquia (antiga);;Europa Oriental
+União Soviética (antiga);;Europa Oriental
+Dinamarca;DNK;Europa Setentrional
+Estônia;EST;Europa Setentrional
+Ilhas Faroé;FRO;Europa Setentrional
+Finlândia;FIN;Europa Setentrional
+Islândia;ISL;Europa Setentrional
+Irlanda;IRL;Europa Setentrional
+Ilha de Man;IMN;Europa Setentrional
+Letônia;LVA;Europa Setentrional
+Lituânia;LTU;Europa Setentrional
+Noruega;NOR;Europa Setentrional
+Suécia;SWE;Europa Setentrional
+Reino Unido;GBR;Europa Setentrional
+Jersey;JEY;Europa Setentrional
+Ilhas do Canal;;Europa Setentrional
+Albânia;ALB;Europa Meridional
+Andorra;AND;Europa Meridional
+Bósnia e Herzegovina;BIH;Europa Meridional
+Croácia;HRV;Europa Meridional
+Gibraltar;GIB;Europa Meridional
+Grécia;GRC;Europa Meridional
+Vaticano;VAT;Europa Meridional
+Itália;ITA;Europa Meridional
+Malta;MLT;Europa Meridional
+Montenegro;MNE;Europa Meridional
+Macedônia do Norte;MKD;Europa Meridional
+Portugal;PRT;Europa Meridional
+San Marino;SMR;Europa Meridional
+Sérvia;SRB;Europa Meridional
+Eslovênia;SVN;Europa Meridional
+Espanha;ESP;Europa Meridional
+Kosovo;XKX;Europa Meridional
+Iugoslávia (antiga);;Europa Meridional
+Sérvia e Montenegro (antiga);;Europa Meridional
+Áustria;AUT;Europa Ocidental
+Bélgica;BEL;Europa Ocidental
+França;FRA;Europa Ocidental
+Alemanha;DEU;Europa Ocidental
+Liechtenstein;LIE;Europa Ocidental
+Luxemburgo;LUX;Europa Ocidental
+Mônaco;MCO;Europa Ocidental
+Países Baixos;NLD;Europa Ocidental
+Suíça;CHE;Europa Ocidental
+Austrália;AUS;Austrália e Nova Zelândia
+Nova Zelândia;NZL;Austrália e Nova Zelândia
+Ilhas Ashmore e Cartier;;Austrália e Nova Zelândia
+Fiji;FJI;Melanésia
+Nova Caledônia;NCL;Melanésia
+Papua-Nova Guiné;PNG;Melanésia
+Ilhas Salomão;SLB;Melanésia
+Vanuatu;VUT;Melanésia
+Guam;GUM;Micronésia
+Ilhas Marshall;MHL;Micronésia
+Micronésia;FSM;Micronésia
+Nauru;NRU;Micronésia
+Palau;PLW;Micronésia
+Samoa Americana;ASM;Polinésia
+Polinésia Francesa;PYF;Polinésia
+Samoa;WSM;Polinésia
+Tonga;TON;Polinésia
+Wallis e Futuna;WLF;Polinésia
+Apátrida;;Indeterminado
+Não informado;;Indeterminado
+Antártida;ATA;Indeterminado

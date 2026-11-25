@@ -1,0 +1,6 @@
+# Microdados do SISMIGRA (baixar do portal do OBMigra) e tabelas geradas por preparar_dados.py
+dados/*.csv
+tabelas/
+# Painel salvo com dados
+*.pbix
+__pycache__/
