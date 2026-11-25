@@ -89,7 +89,7 @@ As classificações são arquivos CSV editáveis: discorda de uma escolha? Edite
 ## Licença e citação
 
 - Código (`*.py`): [MIT](LICENSE).
-- Tabelas de referência, painel e textos: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.pt_BR).
+- Tabelas de referência, painel, imagens e textos: [CC BY 4.0](LICENCA-CONTEUDO.md).
 
 Os microdados do SISMIGRA não são redistribuídos aqui. Ao usar o painel, cite-o (botão *Cite this repository*
 ao lado, a partir de [`CITATION.cff`](CITATION.cff)) e cite a fonte dos dados: SISMIGRA, Polícia Federal /
